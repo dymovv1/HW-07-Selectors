@@ -78,6 +78,9 @@ span + span {
     width: 19px;
     height: 19px;
     background-color: #fff;
+    vertical-align: sub;
+    margin-right: 16px;
+    margin-left: 12px;
 }
 
 .fake_checkbox::before {
@@ -89,14 +92,15 @@ span + span {
     transform: translate(-50%, -50%);
     width: 11px;
     height: 11px;
-    opacity: 0%;
+    opacity: 0;
     transition: 0.2s;
-    background-color: #3B3F45;    
+    background-image: url(../img/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 } 
 
-.real_checkbox + .fake_checkbox::before {
+.real_checkbox:checked + .fake_checkbox::before {
     opacity: 1;
-
 
 }
 
