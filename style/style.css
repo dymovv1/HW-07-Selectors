@@ -46,12 +46,7 @@ body {
 
 .block_list {
     display: inline-block;
-    color: #fff;
-    padding-bottom: 13px;
-    padding-top: 11px;
-    max-height: 45px;
-    background-color: #88839E;
-    width: 534px;
+    color: #fff; 
 }
 
 
@@ -60,12 +55,22 @@ span + span {
     font-size: 11px;
     line-height: 12.89px;
     font-weight: 400;
+    vertical-align: middle;
 }
 
 [title="label"] {
     font-weight: 400;
     font-size: 18px;
     line-height: 21.09px;
+}
+
+.label {
+    display: inline-block;
+    padding-bottom: 13px;
+    padding-top: 11px;
+    width: 534px;
+    height: 45px;
+    background-color: #88839E;
 }
 
 .real_checkbox {
@@ -104,4 +109,11 @@ span + span {
 
 }
 
+.text::before {
+    content: "(";
+    margin-left: 3px;
+}
 
+.text::after {
+    content: ")";
+}
