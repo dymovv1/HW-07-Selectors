@@ -47,6 +47,7 @@ body {
 .block_list {
     display: inline-block;
     color: #fff; 
+    margin-bottom: 45px;
 }
 
 
@@ -146,4 +147,31 @@ span + span {
 .real_checkbox:checked ~ [title="label"]
  {
     text-decoration: line-through 1px white;
+}
+
+
+footer {
+    background: #3B3F45;
+    height: 45%;
+
+}
+
+.btn {
+    display: inline-block;
+    color: #FF8984;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:400;
+    width: 534px;
+    height: 45px;
+    background: #4A4F56;
+    text-align: center;
+    padding: 12px 0px;
+    transition: 0.1s;
+    margin-bottom: 45px;
+}
+
+.btn:hover {
+    background: #3B3F45;
+    border: 2px solid #FF8984;
 }
