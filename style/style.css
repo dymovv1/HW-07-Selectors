@@ -62,6 +62,11 @@ span + span {
     font-weight: 400;
     font-size: 18px;
     line-height: 21.09px;
+    text-decoration: none;
+}
+
+#checkbox:checked ~ [title="label"] {
+    text-decoration: line-through;
 }
 
 .label {
@@ -109,6 +114,11 @@ span + span {
 
 }
 
+.text { 
+    display: inline-block;
+    text-decoration: none;
+}
+
 .text::before {
     content: "(";
     margin-left: 3px;
@@ -117,6 +127,10 @@ span + span {
 .text::after {
     content: ")";
 }
+
+#checkbox:checked ~ .text {
+    text-decoration: line-through;
+  }
 
 .label:hover {
     background: #625E77;
@@ -129,9 +143,3 @@ span + span {
     border-bottom: 3px solid #fff;
     border-top: 3px solid #fff;
 }
-
-/* [title="label"] + .text:checked {
-    text-decoration: line-through 1px white;
-
-} */
-
